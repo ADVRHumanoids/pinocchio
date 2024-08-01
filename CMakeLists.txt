@@ -16,6 +16,9 @@ SET(PROJECT_USE_KEYWORD_LINK_LIBRARIES TRUE)
 SET(CXX_DISABLE_WERROR True)
 SET(CMAKE_VERBOSE_MAKEFILE True)
 
+# hhcm: position independent code for static linking
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 # ----------------------------------------------------
 # --- OPTIONS  ---------------------------------------
 # Need to be set before including base.cmake
