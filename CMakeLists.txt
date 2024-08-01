@@ -16,6 +16,9 @@ SET(PROJECT_USE_KEYWORD_LINK_LIBRARIES TRUE)
 SET(CXX_DISABLE_WERROR True)
 SET(CMAKE_VERBOSE_MAKEFILE True)
 
+# hhcm: position independent code for static linking
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 # Check if the submodule cmake have been initialized
 IF(NOT EXISTS "${CMAKE_CURRENT_LIST_DIR}/cmake/base.cmake")
   MESSAGE(FATAL_ERROR "\nPlease run the following command first:\ngit submodule update --init\n")
